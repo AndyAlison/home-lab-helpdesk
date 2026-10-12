@@ -5,7 +5,7 @@
 **Environment:** macOS RE220 - andiswapongoma@RE220
 
 ### Diagnosis Steps:
-```bash
+``bash
 ls -lh ~/Downloads | head -n 20
 xattr -l /Applications/Safari.app | head -n 20
 spctl --status
@@ -16,12 +16,16 @@ ps aux | grep -i safari | head -n 5
 macOS Gatekeeper quarantine flag (com.apple.quarantine) blocks unverified downloads. Common after downloading.dmg from internet.
 
 ### Resolution:
-- `xattr -d com.apple.quarantine /Applications/AppName.app`
-- Right-click > Open (bypass Gatekeeper once)
+- Remove quarantine:
+  `xattr -d com.apple.quarantine /Applications/AppName.app`
+- Alternate fix:
+  Right-click > Open (bypass Gatekeeper once)
 - System Settings > Privacy & Security > Allow anyway
-- Check: `spctl --assess /Applications/AppName.app`
+- Check/Verify: `spctl --assess /Applications/AppName.app`
+- If installer fails:
+  `sudo installer -pkg ~/ Downloads/App/pkg -target /`
 
 ### Evidence:
 ![Software install evidence](evidence-software.png)
 
-Skills: xattr, spctl, ls -la, ps aux, Gatekeeper troubleshooting
+Skills: xattr, spctl, ls -lh, ps aux, Gatekeeper troubleshooting, App permissions
