@@ -2,10 +2,10 @@
 
 Real-world L1 Helpdesk troubleshooting documented from macOS.
 
-## Tickets Completed: 2/10
+## Tickets Completed: 3/10
 
 ### Ticket 01 - No Internet / Network Troubleshooting
-- Diagnosis: `ifconfig`, `ping`, `traceroute`, DNS checks
+- Diagnosis: `ifconfig`, `ping 8.8.8.8`,ping google.com, `traceroute`, DNS checks
 - Evidence: `evidence-network.png`
 - File: `ticket-01-network.md`
 - Status: Done
@@ -17,10 +17,10 @@ Real-world L1 Helpdesk troubleshooting documented from macOS.
 - File: `ticket-02-printer.md`
 - Status: Done
 
-### Next Up:
-- Ticket 03: Slow Computer / Disk Space
-- Ticket 04: User Cannot Login / Password Reset
-- Ticket 05: Email Not Working
+### Ticket 03 - Slow Computer / Disk Full
+- Diagnosis: df -h (6.5Gi free), top (71M free, Load 5.08), du -sh (23G in Downloads)
+- Evidence: evidence-slow-disk.png, evidence-slow-top.png, evidence-slow-du.png
+- Status: Done
 
 ## Skills Demonstrated
 macOS troubleshooting, Terminal, CUPS printing, networking, L1 documentation, GitHub
