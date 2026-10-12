@@ -26,6 +26,7 @@ Printer subsystem (CUPS) is running, but no printer is configured and no default
 6. If fails after add: restart CUPS, check driver compatibility
 
 ### Evidence:
+![printer evidence](evidence-printer.png)
 - `evidence-03-printer-all.png` - Complete chain: lpstat -p -d, lpstat -t, lpq
 - Shows diagnostic thinking, not just one command
 
