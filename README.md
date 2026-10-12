@@ -25,10 +25,10 @@ Real-world L1 Helpdesk troubleshooting documented from macOS.
 ## Skills Demonstrated
 macOS troubleshooting, Terminal, CUPS printing, networking, L1 documentation, GitHub
 
-**By Andiswapon Goma | Aspiring IT Helpdesk | Cape Town**
+**By Andiswa Pongoma | IT Helpdesk | Cape Town**
 ## What I Learned
 - How to stay calm and ask clear questions
 - How to use basic network commands
 - How to document fixes so next time is faster
 
-Created by Andy Alison - Aspiring IT Support Technician | Cape Town
+Created by Andy Alison - IT Support Technician | Cape Town
