@@ -2,7 +2,7 @@
 
 Real-world L1 Helpdesk troubleshooting documented from macOS.
 
-## Tickets Completed: 3/10
+## Tickets Completed: 5/10
 
 ### Ticket 01 - No Internet / Network Troubleshooting
 - Diagnosis: `ifconfig`, `ping 8.8.8.8`,ping google.com, `traceroute`, DNS checks
