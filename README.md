@@ -20,6 +20,8 @@ This is my home helpdesk lab where I practice troubleshooting like a real IT Sup
 6. Document solution for user
 
 **Result:** User back online. I explain what happened in simple words.
+### Evidence
+![My troubleshooting on Mac](Check IP.png)
 
 ## Ticket 2: Coming Next
 - Printer not working
