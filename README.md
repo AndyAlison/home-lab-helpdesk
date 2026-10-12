@@ -2,7 +2,7 @@
 
 Real-world L1 Helpdesk troubleshooting documented from macOS.
 
-## Tickets Completed: 5/10
+## Tickets Completed: 6/10
 
 ### Ticket 01 - No Internet / Network Troubleshooting
 - Diagnosis: `ifconfig`, `ping 8.8.8.8`,ping google.com, `traceroute`, DNS checks
@@ -25,10 +25,17 @@ Real-world L1 Helpdesk troubleshooting documented from macOS.
 ### Ticket 04 - User Access Denied / Permissions
 - Diagnosis: whoami, id, ls -la, sudo -l, last
 - Evidence: evidence-permissions.png
+- Status: Done
 
 ### Ticket 05 - Software Won't Install / App Blocked
 - Diagnosis: ls Downloads, xattr, spctl --status, ls -la /Applications, ps aux
 - Evidence: evidence-software.png
+- Status: Done
+
+###  Ticket 06 - User Login Failure
+- Diagnosis: ls -la, who, dscl list/Users, id (whoami), dscl read/Users 
+- Evidence: evidence-login.png
+- Status: Done
 
 ## Core Skills Demonstrated
 Terminal, Network Diagnostics, CUPS Printing, Performance Triage, User Management, macOS Gatekeeper, Permissions
