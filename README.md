@@ -2,7 +2,7 @@
 
 Real-world L1 Helpdesk troubleshooting documented from macOS.
 
-## Tickets Completed: 6/10
+## Tickets Completed: 10/10
 
 ### Ticket 01 - No Internet / Network Troubleshooting
 - Diagnosis: `ifconfig`, `ping 8.8.8.8`,ping google.com, `traceroute`, DNS checks
@@ -37,8 +37,28 @@ Real-world L1 Helpdesk troubleshooting documented from macOS.
 - Evidence: evidence-login.png
 - Status: Done
 
+###  Ticket 07 - Incorrect Date/Time Causing SSL/Login Failures
+- Diagnosis: date, sudo sntp, sudo systemsetup timezone, sudo systemsetup networktimeserver
+- Evidence: evidence-daztetime.png
+- Status: Done
+  
+###  Ticket 08 - No Sound / Audio Not Outputting
+- Diagnosis: system_profiler SPAudioDataType, osascript, ps aux
+- Evidence: evidence-audio.png
+- Status: Done
+  
+###  Ticket 09 - Bluetooth Not Working / Device Won't Pair
+- Diagnosis: system_profiler SPBluetoothDataType, defaults read, ps aux 
+- Evidence: evidence-bluetooth.png
+- Status: Done
+
+###  Ticket 10 - Slow Boot / Too Many Startup Items / Boot Failure 
+- Diagnosis: pmset -g log, launchctl list, ls -la
+- Evidence: evidence-startup.png
+- Status: Done
+
 ## Core Skills Demonstrated
-Terminal, Network Diagnostics, CUPS Printing, Performance Triage, User Management, macOS Gatekeeper, Permissions
+Terminal, Network Diagnostics, CUPS Printing, Performance Triage, User Management, macOS Gatekeeper, Permissions, pfctl, system_profiler, launchctl, sntp, dscl, cupsctl
 
 **By Andiswa Pongoma | IT Helpdesk | Cape Town**
 ## What I Learned
