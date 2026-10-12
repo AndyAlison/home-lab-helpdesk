@@ -1,32 +1,31 @@
-# Home Lab - IT Helpdesk Simulation
+# Home Lab Helpdesk - IT Support Tickets
 
-This is my home helpdesk lab where I practice troubleshooting like a real IT Support Technician. I document how I would solve common user problems.
+Real-world L1 Helpdesk troubleshooting documented from macOS.
 
-## Tools I Use
-- Windows 10/11
-- Command Prompt (ipconfig, ping, tracert)
-- GitHub for documentation
+## Tickets Completed: 2/10
 
-## Ticket 1: User Cannot Access Internet
+### Ticket 01 - No Internet / Network Troubleshooting
+- Diagnosis: `ifconfig`, `ping`, `traceroute`, DNS checks
+- Evidence: `evidence-network.png`
+- File: `ticket-01-network.md`
+- Status: Done
 
-**Problem:** User says "No internet" on Windows PC.
+### Ticket 02 - Printer Not Working
+- Diagnosis: `lpstat -p -d`, `lpstat -t`, `lpq` - CUPS scheduler running but no destinations
+- Root Cause: No printer configured, no default destination
+- Evidence: `evidence-printer.png` (full chain in one screenshot)
+- File: `ticket-02-printer.md`
+- Status: Done
 
-**How I troubleshoot:**
-1. Ask user what they see - check if WiFi icon has warning
-2. Run `ipconfig` to check if they have an IP address
-3. Run `ping 8.8.8.8` to test internet, and `ping google.com` to test DNS
-4. If no IP: run `ipconfig /release` then `ipconfig /renew`
-5. If DNS fails: set DNS to 8.8.8.8 and 1.1.1.1
-6. Document solution for user
+### Next Up:
+- Ticket 03: Slow Computer / Disk Space
+- Ticket 04: User Cannot Login / Password Reset
+- Ticket 05: Email Not Working
 
-**Result:** User back online. I explain what happened in simple words.
-![My troubleshooting on Mac](Check%20IP.png)
+## Skills Demonstrated
+macOS troubleshooting, Terminal, CUPS printing, networking, L1 documentation, GitHub
 
-## Ticket 2: Coming Next
-- Printer not working
-- Slow computer
-- Forgot password
-
+**By Andiswapon Goma | Aspiring IT Helpdesk | Cape Town**
 ## What I Learned
 - How to stay calm and ask clear questions
 - How to use basic network commands
