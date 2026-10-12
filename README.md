@@ -60,7 +60,7 @@ Real-world L1 Helpdesk troubleshooting documented from macOS.
 ## Core Skills Demonstrated
 Terminal, Network Diagnostics, CUPS Printing, Performance Triage, User Management, macOS Gatekeeper, Permissions, pfctl, system_profiler, launchctl, sntp, dscl, cupsctl
 
-**By Andiswa Pongoma | IT Helpdesk | Cape Town**
+**By Andiswa Alison Pongoma | IT Helpdesk | Cape Town**
 ## What I Learned
 - How to stay calm and ask clear questions
 - How to use basic network commands
