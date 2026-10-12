@@ -22,8 +22,16 @@ Real-world L1 Helpdesk troubleshooting documented from macOS.
 - Evidence: evidence-slow-disk.png, evidence-slow-top.png, evidence-slow-du.png
 - Status: Done
 
-## Skills Demonstrated
-macOS troubleshooting, Terminal, CUPS printing, networking, L1 documentation, GitHub
+### Ticket 04 - User Access Denied / Permissions
+- Diagnosis: whoami, id, ls -la, sudo -l, last
+- Evidence: evidence-permissions.png
+
+### Ticket 05 - Software Won't Install / App Blocked
+- Diagnosis: ls Downloads, xattr, spctl --status, ls -la /Applications, ps aux
+- Evidence: evidence-software.png
+
+## Core Skills Demonstrated
+Terminal, Network Diagnostics, CUPS Printing, Performance Triage, User Management, macOS Gatekeeper, Permissions
 
 **By Andiswa Pongoma | IT Helpdesk | Cape Town**
 ## What I Learned
