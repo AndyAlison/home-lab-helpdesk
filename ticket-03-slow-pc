@@ -1,0 +1,49 @@
+# Ticket 03 - Slow Computer Performance
+
+**User reports:** "My computer is very slow, takes forever to open apps"
+**Environment:** macOS RE220 - andiswapongoma@RE220
+**Date:** 2026-10-12
+
+### Diagnosis Steps:
+
+1. Checked disk space:
+   Result: 
+   - /System/Volumes/Data: 187Gi Used, 6.5Gi Avail - critically low
+   - / 65% used
+   - Root cause clue #1: Disk almost full
+
+2. Checked CPU/Memory/Load:
+   Result:
+   - Processes: 534 total, 5 running
+   - Load Avg: 5.08, 4.88, 5.05 (High)
+   - CPU: 50.85% sys - high system load
+   - PhysMem: 7560M used, 71M unused - RAM exhausted
+
+3. Found space hog:
+   Result:
+   - Documents: 2.0G
+   - Downloads: 23G - MAJOR hog
+   - Desktop: 115M
+   - Root cause clue #2: Downloads folder is the culprit
+
+### Root Cause:
+Confirmed multi-factor: 23GB in Downloads eating the 6.5Gi free space + RAM pressure (71M free) + high Load 5.08. System is swapping and struggling.
+
+### Resolution Workflow:
+1. Immediate: Clean ~/Downloads (23G) - archive to external or delete old DMGs/installers
+2. Empty Trash, clear caches
+3. Close unnecessary apps/browser tabs to free RAM
+4. Restart to clear compression memory
+5. Advise user on storage hygiene, set up quarterly clean-up
+6. Recommend external storage if pattern repeats
+
+### Evidence:
+- Disk space critical (6.5Gi free):
+  ![df -h](evidence-slow-disk.png)
+- RAM exhausted (71M free), High Load:
+  ![top](evidence-slow-top.png)
+- Found 23G hog in Downloads:
+  ![du](evidence-slow-du.png) 
+
+### Skills demonstrated:
+df, top, du, performance triage, macOS storage analysis, L1 documentation
