@@ -39,9 +39,9 @@ Confirmed multi-factor: 23GB in Downloads eating the 6.5Gi free space + RAM pres
 
 ### Evidence:
 - Disk space critical (6.5Gi free):
-  ![df -h](evidence-slow-disk.png)
+  ![df -h](evidence-slow-disk.png)  
 - RAM exhausted (71M free), High Load:
-  ![top](evidence-slow-top.png)
+  ![top](evidence-slow-top.png) 
 - Found 23G hog in Downloads:
   ![du](evidence-slow-du.png) 
 
